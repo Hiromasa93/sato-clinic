@@ -97,7 +97,8 @@ figure,p,h1,h2,h3,ul{margin-top:0}
 
 .greeting-grid{display:grid;grid-template-columns:360px 1fr;gap:72px;align-items:center}
 .greeting-photo-wrap{text-align:center}
-.greeting-photo{width:330px;aspect-ratio:1/1;object-fit:cover;object-position:30% center;margin:auto}
+.greeting-photo-crop{width:280px;aspect-ratio:1/1;overflow:hidden;margin-inline:auto}
+.greeting-photo{width:100%;height:100%;aspect-ratio:1/1;object-fit:cover;object-position:92% center;transform:scale(1.9);transform-origin:50% 19%}
 .roman-name{margin:8px 0 0;color:#76aeb1;font-size:30px;line-height:1.2;font-weight:500;letter-spacing:.02em;text-align:center}
 .greeting-copy .section-heading{margin-bottom:26px}
 .greeting-copy p{font-size:20px;line-height:1.9;margin-bottom:18px}
@@ -108,13 +109,15 @@ figure,p,h1,h2,h3,ul{margin-top:0}
 .service-row.reverse{grid-template-columns:minmax(0,1.2fr) minmax(330px,.8fr)}
 .service-row.reverse figure{order:2}
 .service-row figure{margin:0}
-.service-row img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.service-row img{width:330px;max-width:100%;aspect-ratio:1/1;object-fit:cover;margin-inline:auto}
+.services .service-row:nth-of-type(3) img,.services .service-row:nth-of-type(4) img{transform:scaleX(-1)}
+.services .service-row:nth-of-type(2) img,.services .service-row:nth-of-type(3) img{object-position:right center}
 .service-row h3{margin-bottom:14px;color:var(--teal);font-size:28px;font-weight:500;line-height:1.45}
 .service-row p{font-size:22px;line-height:1.8;margin:0}
 
 .about-grid{display:grid;grid-template-columns:minmax(360px,.86fr) minmax(0,1.14fr);gap:72px;align-items:center}
 .about-grid figure{margin:0}
-.about-grid img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.about-grid img{width:330px;max-width:100%;aspect-ratio:1/1;object-fit:cover;margin-inline:auto}
 .about-grid .section-heading{margin-bottom:24px}
 .about-grid p{font-size:20px;line-height:1.9;margin-bottom:0}
 
@@ -124,8 +127,13 @@ figure,p,h1,h2,h3,ul{margin-top:0}
 .staff-row.reverse{grid-template-columns:1fr 280px}
 .staff-row.reverse figure{order:2}
 .staff-row.reverse h3{text-align:right}
-.staff-row figure{margin:0}
-.staff-row img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.staff-row figure{margin:0;overflow:hidden}
+.staff-row img{width:100%;aspect-ratio:1/1;object-fit:cover;transform:scale(var(--staff-image-zoom,1));transform-origin:var(--staff-image-origin,50% 50%)}
+.staff-row:nth-of-type(1) img{object-position:92% center;--staff-image-zoom:1.9;--staff-image-origin:50% 19%}
+.staff-row:nth-of-type(2) img{object-position:right center;--staff-image-zoom:1.35;--staff-image-origin:60% 10%}
+.staff-row:nth-of-type(3) img{object-position:47% center;--staff-image-zoom:1.25;--staff-image-origin:50% 20%}
+.staff-row:nth-of-type(4) img{object-position:11.5% center;--staff-image-zoom:1.45;--staff-image-origin:0% 0%}
+.staff-row:nth-of-type(4) figure{transform:scaleX(-1)}
 .staff-row h3{color:var(--teal);font-size:26px;font-weight:500;margin-bottom:16px}
 .staff-row ul{font-size:20px;line-height:1.85;margin:0;padding-left:1.2em}
 
@@ -208,7 +216,7 @@ figure,p,h1,h2,h3,ul{margin-top:0}
 
   .greeting-grid{display:block}
   .greeting-photo-wrap{margin-bottom:22px}
-  .greeting-photo{width:180px;height:180px;object-position:32% center}
+  .greeting-photo-crop{width:210px;max-width:68%}
   .roman-name{font-size:18px;margin-top:7px}
   .greeting-copy .section-heading{margin-bottom:20px}
   .greeting-copy p{font-size:16px;line-height:1.75;margin-bottom:16px}
@@ -218,7 +226,7 @@ figure,p,h1,h2,h3,ul{margin-top:0}
   .service-row,.service-row.reverse{display:block;margin-bottom:42px}
   .service-row.reverse figure{order:initial}
   .service-row figure{margin:0 0 14px}
-  .service-row img{aspect-ratio:16/9;object-fit:cover}
+  .service-row img{width:100%;aspect-ratio:16/9;object-fit:cover}
   .service-row h3{font-size:18px;line-height:1.5;margin-bottom:8px}
   .service-row p{font-size:16px;line-height:1.75}
 
@@ -233,7 +241,7 @@ figure,p,h1,h2,h3,ul{margin-top:0}
   .staff-row,.staff-row.reverse{display:flex;flex-direction:column;gap:0;align-items:stretch;margin-bottom:44px}
   .staff-row.reverse figure{order:0}
   .staff-row figure{width:210px;max-width:68%;margin:0 auto 14px}
-  .staff-row img{width:100%;aspect-ratio:16/9;object-fit:cover}
+  .staff-row img{width:100%;aspect-ratio:1/1;object-fit:cover}
   .staff-row h3{text-align:center;font-size:18px;line-height:1.5;margin-bottom:9px}
   .staff-row.reverse h3{text-align:center}
   .staff-row ul{font-size:16px;line-height:1.75;margin:0;padding-left:1.2em}
