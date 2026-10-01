@@ -79,74 +79,74 @@ figure,p,h1,h2,h3,ul{margin-top:0}
 .hero h1{position:relative;z-index:1;margin:0;color:#0d6e73;font-family:"Noto Serif JP",serif;font-size:70px;font-weight:500;letter-spacing:.06em;line-height:1.4;white-space:nowrap}
 
 .section-wide,.section-narrow,.content-shell{width:min(100% - 96px,var(--max));margin-inline:auto}
-.section-wide{padding:92px 0}
-.section-narrow{padding:82px 0}
-.band{background:var(--pale);padding:76px 0}
+.section-wide{padding:80px 0}
+.section-narrow{padding:66px 0}
+.band{background:var(--pale);padding:64px 0}
 
-.section-heading{color:var(--teal);display:flex;align-items:center;margin-bottom:42px}
+.section-heading{color:var(--teal);display:flex;align-items:center;margin-bottom:32px}
 .section-heading h2{margin:0;font-family:"Noto Serif JP",serif;font-size:32px;line-height:1.4;font-weight:500;letter-spacing:.03em}
 .section-heading-left{gap:14px}
 .heading-bar{width:5px;height:34px;background:var(--teal);border-radius:2px;flex:0 0 auto}
 .section-heading-center{justify-content:center;gap:28px}
 .section-heading-center>span{height:1px;background:var(--teal);flex:1;max-width:230px}
-.compact-heading{margin-bottom:36px}
+.compact-heading{margin-bottom:28px}
 
 .hours{max-width:1040px}
-.hours .section-heading{margin-bottom:30px}
+.hours .section-heading{margin-bottom:24px}
 .hours-table-wrap{overflow:hidden}
 .hours-table{width:100%;border-collapse:collapse;color:#1f2f30;font-size:18px}
-.hours-table th,.hours-table td{padding:12px 14px;text-align:center;border-bottom:1px solid var(--line);font-weight:400}
+.hours-table th,.hours-table td{padding:10px 12px;text-align:center;border-bottom:1px solid var(--line);font-weight:400}
 .hours-table thead th{font-size:17px}
 .hours-table tbody th{text-align:left;white-space:nowrap;width:31%;font-weight:400}
 .hours-table td{color:var(--teal);font-size:20px}
-.hours-note{margin:18px 0 0;font-size:13px;line-height:1.7;color:#526264}
+.hours-note{margin:14px 0 0;font-size:13px;line-height:1.7;color:#526264}
 
-.information-gallery{width:100%;overflow:hidden;padding:0 0 44px}
+.information-gallery{width:100%;overflow:hidden;padding:0 0 32px}
 .info-track{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
 .info-track figure{margin:0;overflow:hidden}
 .info-track img{width:100%;aspect-ratio:16/9;object-fit:cover}
 .carousel-dots{display:none}
 
-.news{padding-top:78px}
-.news-grid{display:grid;grid-template-columns:minmax(280px,.72fr) minmax(420px,1.28fr);align-items:start;gap:74px}
+.news{padding-top:64px}
+.news-grid{display:grid;grid-template-columns:minmax(280px,.72fr) minmax(420px,1.28fr);align-items:start;gap:56px}
 .news-image{margin:0}
 .news-image img{width:100%;aspect-ratio:3/4;object-fit:cover}
-.news-content .section-heading{margin-bottom:26px}
+.news-content .section-heading{margin-bottom:22px}
 .news-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
-.news-list li{font-size:17px;padding:17px 4px;border-bottom:1px solid var(--line)}
-.button-row{display:flex;justify-content:flex-end;margin-top:28px}
+.news-list li{font-size:17px;padding:14px 4px;border-bottom:1px solid var(--line)}
+.button-row{display:flex;justify-content:flex-end;margin-top:22px}
 .more-button{min-height:40px;padding:8px 24px;border-radius:999px;background:var(--teal-dark);color:#fff;display:inline-flex;align-items:center;gap:14px;font-size:14px;font-weight:500;line-height:1.2;white-space:nowrap}
 .more-button span{font-size:20px;line-height:1}
 
-.greeting-grid{display:grid;grid-template-columns:360px 1fr;gap:72px;align-items:center}
+.greeting-grid{display:grid;grid-template-columns:360px 1fr;gap:56px;align-items:center}
 .greeting-photo-wrap{text-align:center}
 .greeting-photo-crop{width:280px;aspect-ratio:1/1;overflow:hidden;margin-inline:auto}
 .greeting-photo{width:100%;height:100%;aspect-ratio:1/1;object-fit:cover;object-position:92% center;transform:scale(1.9);transform-origin:50% 19%}
-.roman-name{margin:8px 0 0;color:#76aeb1;font-size:30px;line-height:1.2;font-weight:500;letter-spacing:.02em;text-align:center}
-.greeting-copy .section-heading{margin-bottom:26px}
-.greeting-copy p{font-size:20px;line-height:1.9;margin-bottom:18px}
-.greeting-copy .signature{text-align:right;margin-top:32px;margin-bottom:0;font-size:17px}
+.roman-name{margin:6px 0 0;color:#76aeb1;font-size:30px;line-height:1.2;font-weight:500;letter-spacing:.02em;text-align:center}
+.greeting-copy .section-heading{margin-bottom:22px}
+.greeting-copy p{font-size:20px;line-height:1.9;margin-bottom:14px}
+.greeting-copy .signature{text-align:right;margin-top:24px;margin-bottom:0;font-size:17px}
 
-.services .section-heading-center{margin-bottom:52px}
-.service-row{display:grid;grid-template-columns:minmax(330px,.8fr) minmax(0,1.2fr);align-items:center;gap:76px;margin-bottom:78px}
+.services .section-heading-center{margin-bottom:44px}
+.service-row{display:grid;grid-template-columns:minmax(330px,.8fr) minmax(0,1.2fr);align-items:center;gap:56px;margin-bottom:64px}
 .service-row.reverse{grid-template-columns:minmax(0,1.2fr) minmax(330px,.8fr)}
 .service-row.reverse figure{order:2}
 .service-row figure{margin:0}
 .service-row img{width:330px;max-width:100%;aspect-ratio:1/1;object-fit:cover;margin-inline:auto}
 .services .service-row:nth-of-type(3) img,.services .service-row:nth-of-type(4) img{transform:scaleX(-1)}
 .services .service-row:nth-of-type(2) img,.services .service-row:nth-of-type(3) img{object-position:right center}
-.service-row h3{margin-bottom:14px;color:var(--teal);font-size:28px;font-weight:500;line-height:1.45}
+.service-row h3{margin-bottom:10px;color:var(--teal);font-size:28px;font-weight:500;line-height:1.45}
 .service-row p{font-size:22px;line-height:1.8;margin:0}
 
-.about-grid{display:grid;grid-template-columns:minmax(360px,.86fr) minmax(0,1.14fr);gap:72px;align-items:center}
+.about-grid{display:grid;grid-template-columns:minmax(360px,.86fr) minmax(0,1.14fr);gap:56px;align-items:center}
 .about-grid figure{margin:0}
 .about-grid img{width:330px;max-width:100%;aspect-ratio:1/1;object-fit:cover;margin-inline:auto}
-.about-grid .section-heading{margin-bottom:24px}
+.about-grid .section-heading{margin-bottom:20px}
 .about-grid p{font-size:20px;line-height:1.9;margin-bottom:0}
 
-.staff{padding-bottom:68px}
-.staff-lead{max-width:860px;margin:-14px auto 56px;text-align:center;font-size:18px;line-height:1.9}
-.staff-row{display:grid;grid-template-columns:280px 1fr;gap:68px;align-items:center;margin-bottom:64px}
+.staff{padding-bottom:56px}
+.staff-lead{max-width:860px;margin:-14px auto 44px;text-align:center;font-size:18px;line-height:1.9}
+.staff-row{display:grid;grid-template-columns:280px 1fr;gap:56px;align-items:center;margin-bottom:52px}
 .staff-row.reverse{grid-template-columns:1fr 280px}
 .staff-row.reverse figure{order:2}
 .staff-row.reverse h3{text-align:right}
@@ -160,15 +160,15 @@ figure,p,h1,h2,h3,ul{margin-top:0}
 .staff-row h3{color:var(--teal);font-size:26px;font-weight:500;margin-bottom:16px}
 .staff-row ul{font-size:20px;line-height:1.85;margin:0;padding-left:1.2em}
 
-.access{padding-top:48px}
-.access-grid{display:grid;grid-template-columns:minmax(430px,1.05fr) minmax(340px,.95fr);gap:72px;align-items:start}
+.access{padding-top:40px}
+.access-grid{display:grid;grid-template-columns:minmax(430px,1.05fr) minmax(340px,.95fr);gap:56px;align-items:start}
 .access-grid figure{margin:0}
 .access-grid img{width:100%;aspect-ratio:4/3;object-fit:cover}
 .access-info h3{color:var(--text);font-size:20px;font-weight:500;margin:0 0 8px}
 .access-info p{font-size:18px;line-height:1.8;margin:0 0 28px}
 
-.hours-bottom{padding-top:30px;padding-bottom:52px}
-.departments{padding-top:20px;padding-bottom:86px;text-align:center}
+.hours-bottom{padding-top:24px;padding-bottom:44px}
+.departments{padding-top:20px;padding-bottom:68px;text-align:center}
 .departments ul{list-style:none;padding:0;margin:0 auto 18px;font-size:18px;line-height:2.1}
 .departments p{font-size:14px;margin:0;color:#556466}
 
@@ -177,7 +177,7 @@ figure,p,h1,h2,h3,ul{margin-top:0}
 .copyright{margin:0;font-size:13px}
 
 @media (max-width: 760px){
-  :root{--mobile-pad:20px}
+  :root{--mobile-pad:24px}
   body{line-height:1.75;background:var(--paper)}
   .site-header{height:58px;background:#fff}
   .header-inner{width:100%;padding:0 14px 0 12px;gap:12px}
@@ -198,20 +198,20 @@ figure,p,h1,h2,h3,ul{margin-top:0}
   .hero h1{font-size:28px;line-height:1.35;letter-spacing:.03em}
 
   .section-wide,.section-narrow,.content-shell{width:auto;margin:0;padding-left:var(--mobile-pad);padding-right:var(--mobile-pad)}
-  .section-wide{padding-top:56px;padding-bottom:56px}
-  .section-narrow{padding-top:46px;padding-bottom:46px}
-  .band{padding:52px 0}
+  .section-wide{padding-top:48px;padding-bottom:48px}
+  .section-narrow{padding-top:40px;padding-bottom:40px}
+  .band{padding:44px 0}
 
-  .section-heading{margin-bottom:28px}
+  .section-heading{margin-bottom:24px}
   .section-heading h2{font-size:22px;line-height:1.45}
   .section-heading-left{gap:9px}
   .heading-bar{width:3px;height:23px}
   .section-heading-center{gap:14px}
   .section-heading-center>span{max-width:none}
-  .compact-heading{margin-bottom:26px}
+  .compact-heading{margin-bottom:22px}
 
-  .hours{padding-top:36px;padding-bottom:34px}
-  .hours .section-heading{margin-bottom:16px}
+  .hours{padding-top:32px;padding-bottom:28px}
+  .hours .section-heading{margin-bottom:14px}
   .hours-table-wrap{width:100%;overflow:visible}
   .hours-table{font-size:12px;table-layout:fixed}
   .hours-table th,.hours-table td{padding:7px 2px}
@@ -219,68 +219,68 @@ figure,p,h1,h2,h3,ul{margin-top:0}
   .hours-table thead th:first-child{width:35%}
   .hours-table tbody th{font-size:11px;line-height:1.3;width:35%;white-space:nowrap;padding-left:0}
   .hours-table td{font-size:13px}
-  .hours-note{font-size:11px;line-height:1.65;margin-top:12px}
+  .hours-note{font-size:11px;line-height:1.65;margin-top:10px}
 
-  .information-gallery{padding-bottom:38px;background:var(--paper)}
-  .info-track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 var(--mobile-pad);scrollbar-width:none}
+  .information-gallery{padding-bottom:28px;background:var(--paper)}
+  .info-track{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 var(--mobile-pad);scrollbar-width:none}
   .info-track::-webkit-scrollbar{display:none}
   .info-track figure{flex:0 0 78%;scroll-snap-align:center}
   .info-track img{width:100%;aspect-ratio:16/9;object-fit:cover}
-  .carousel-dots{display:flex;justify-content:center;gap:6px;margin-top:10px}
+  .carousel-dots{display:flex;justify-content:center;gap:6px;margin-top:8px}
   .carousel-dots span{width:7px;height:7px;border-radius:50%;background:#b7bfc0}
   .carousel-dots .active{background:var(--teal)}
 
-  .news{padding-top:44px}
+  .news{padding-top:36px}
   .news-grid{display:block}
-  .news-image{margin:0 0 28px}
+  .news-image{margin:0 0 20px}
   .news-image img{width:100%;aspect-ratio:16/9;object-fit:cover}
-  .news-content .section-heading{margin-bottom:20px}
-  .news-list li{font-size:14px;padding:12px 2px}
-  .button-row{margin-top:20px}
+  .news-content .section-heading{margin-bottom:16px}
+  .news-list li{font-size:14px;padding:10px 2px}
+  .button-row{margin-top:16px}
   .more-button{min-height:44px;padding:10px 20px;font-size:14px}
 
   .greeting-grid{display:block}
-  .greeting-photo-wrap{margin-bottom:22px}
+  .greeting-photo-wrap{margin-bottom:18px}
   .greeting-photo-crop{width:210px;max-width:68%}
   .roman-name{font-size:18px;margin-top:7px}
-  .greeting-copy .section-heading{margin-bottom:20px}
-  .greeting-copy p{font-size:16px;line-height:1.75;margin-bottom:16px}
-  .greeting-copy .signature{font-size:14px;margin-top:24px}
+  .greeting-copy .section-heading{margin-bottom:16px}
+  .greeting-copy p{font-size:16px;line-height:1.75;margin-bottom:14px}
+  .greeting-copy .signature{font-size:14px;margin-top:20px}
 
-  .services .section-heading-center{margin-bottom:34px}
-  .service-row,.service-row.reverse{display:block;margin-bottom:42px}
+  .services .section-heading-center{margin-bottom:28px}
+  .service-row,.service-row.reverse{display:block;margin-bottom:36px}
   .service-row.reverse figure{order:initial}
-  .service-row figure{margin:0 0 14px}
+  .service-row figure{margin:0 0 12px}
   .service-row img{width:100%;aspect-ratio:16/9;object-fit:cover}
-  .service-row h3{font-size:18px;line-height:1.5;margin-bottom:8px}
+  .service-row h3{font-size:18px;line-height:1.5;margin-bottom:10px}
   .service-row p{font-size:16px;line-height:1.75}
 
   .about-grid{display:block}
-  .about-grid figure{margin:0 0 24px}
+  .about-grid figure{margin:0 0 16px}
   .about-grid img{aspect-ratio:16/9}
-  .about-grid .section-heading{margin-bottom:20px}
+  .about-grid .section-heading{margin-bottom:16px}
   .about-grid p{font-size:16px;line-height:1.75}
 
-  .staff{padding-bottom:52px}
-  .staff-lead{font-size:14px;line-height:1.75;margin:-4px 0 30px;text-align:left}
-  .staff-row,.staff-row.reverse{display:flex;flex-direction:column;gap:0;align-items:stretch;margin-bottom:44px}
+  .staff{padding-bottom:44px}
+  .staff-lead{font-size:14px;line-height:1.75;margin:-4px 0 24px;text-align:left}
+  .staff-row,.staff-row.reverse{display:flex;flex-direction:column;gap:0;align-items:stretch;margin-bottom:40px}
   .staff-row.reverse figure{order:0}
   .staff-row figure{width:210px;max-width:68%;margin:0 auto 14px}
   .staff-row img{width:100%;aspect-ratio:1/1;object-fit:cover}
-  .staff-row h3{text-align:center;font-size:18px;line-height:1.5;margin-bottom:9px}
+  .staff-row h3{text-align:center;font-size:18px;line-height:1.5;margin-bottom:10px}
   .staff-row.reverse h3{text-align:center}
   .staff-row ul{font-size:16px;line-height:1.75;margin:0;padding-left:1.2em}
 
-  .access{padding-top:36px}
+  .access{padding-top:32px}
   .access-grid{display:block}
-  .access-grid figure{margin:0 0 18px}
+  .access-grid figure{margin:0 0 14px}
   .access-grid img{aspect-ratio:4/3}
   .access-info h3{font-size:16px;margin-bottom:5px}
-  .access-info p{font-size:14px;line-height:1.7;margin-bottom:18px}
+  .access-info p{font-size:14px;line-height:1.7;margin-bottom:14px}
 
-  .hours-bottom{padding-top:28px;padding-bottom:34px}
-  .departments{padding-top:20px;padding-bottom:58px}
-  .departments ul{font-size:14px;line-height:1.9;margin-bottom:14px}
+  .hours-bottom{padding-top:24px;padding-bottom:28px}
+  .departments{padding-top:16px;padding-bottom:48px}
+  .departments ul{font-size:14px;line-height:1.9;margin-bottom:12px}
   .departments p{font-size:11px;line-height:1.7}
 
   .site-footer{padding:22px 18px 18px}
