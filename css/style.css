@@ -123,10 +123,11 @@ figure,p,h1,h2,h3,ul{margin-top:0}
 .staff-row{display:grid;grid-template-columns:280px 1fr;gap:68px;align-items:center;margin-bottom:64px}
 .staff-row.reverse{grid-template-columns:1fr 280px}
 .staff-row.reverse figure{order:2}
+.staff-row.reverse h3{text-align:right}
 .staff-row figure{margin:0}
 .staff-row img{width:100%;aspect-ratio:1/1;object-fit:cover}
 .staff-row h3{color:var(--teal);font-size:26px;font-weight:500;margin-bottom:16px}
-.staff-row p{font-size:20px;line-height:1.85;margin:0}
+.staff-row ul{font-size:20px;line-height:1.85;margin:0;padding-left:1.2em}
 
 .access{padding-top:48px}
 .access-grid{display:grid;grid-template-columns:minmax(430px,1.05fr) minmax(340px,.95fr);gap:72px;align-items:start}
@@ -234,7 +235,8 @@ figure,p,h1,h2,h3,ul{margin-top:0}
   .staff-row figure{width:210px;max-width:68%;margin:0 auto 14px}
   .staff-row img{width:100%;aspect-ratio:16/9;object-fit:cover}
   .staff-row h3{text-align:center;font-size:18px;line-height:1.5;margin-bottom:9px}
-  .staff-row p{font-size:16px;line-height:1.75;margin:0}
+  .staff-row.reverse h3{text-align:center}
+  .staff-row ul{font-size:16px;line-height:1.75;margin:0;padding-left:1.2em}
 
   .access{padding-top:36px}
   .access-grid{display:block}
@@ -259,5 +261,6 @@ figure,p,h1,h2,h3,ul{margin-top:0}
   .hours-table{font-size:11px}
   .hours-table tbody th{font-size:10.5px}
   .hours-table td{font-size:12px}
-  .service-row p,.greeting-copy p,.about-grid p,.staff-row p{font-size:15px}
+  .service-row p,.greeting-copy p,.about-grid p{font-size:15px}
+  .staff-row ul{font-size:15px}
 }
