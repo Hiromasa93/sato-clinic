@@ -175,9 +175,9 @@ figure,p,h1,h2,h3,ul{margin-top:0}
 .departments ul{list-style:none;padding:0;margin:0 auto 18px;font-size:18px;line-height:2.1}
 .departments p{font-size:14px;margin:0;color:var(--color-muted)}
 
-.site-footer{background:var(--color-footer);color:var(--color-white);padding:30px 24px 22px;text-align:center}
-.disclaimer{max-width:920px;margin:0 auto 12px;font-size:12px;line-height:1.8;color:rgba(255,255,255,.86)}
-.copyright{margin:0;font-size:13px}
+.site-footer{background:var(--color-footer);color:var(--color-white);padding:14px 24px 12px;text-align:center}
+.disclaimer{max-width:1180px;margin:0 auto 6px;font-size:11px;line-height:1.65;color:rgba(255,255,255,.86)}
+.copyright{margin:0;font-size:11px}
 
 @media (max-width: 760px){
   :root{--mobile-pad:24px}
@@ -286,8 +286,8 @@ figure,p,h1,h2,h3,ul{margin-top:0}
   .departments ul{font-size:14px;line-height:1.9;margin-bottom:12px}
   .departments p{font-size:11px;line-height:1.7}
 
-  .site-footer{padding:22px 18px 18px}
-  .disclaimer{font-size:10px;line-height:1.7;margin-bottom:10px}
+  .site-footer{padding:14px 16px 12px}
+  .disclaimer{font-size:11px;line-height:1.7;margin-bottom:8px}
   .copyright{font-size:11px}
 }
 
