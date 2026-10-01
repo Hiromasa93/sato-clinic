@@ -1,0 +1,263 @@
+:root{
+  --teal:#0b7478;
+  --teal-dark:#006267;
+  --teal-soft:#8fc1c4;
+  --pale:#e6f0f1;
+  --paper:#f8fbfb;
+  --text:#263638;
+  --muted:#647274;
+  --line:#9db2b4;
+  --white:#fff;
+  --max:1180px;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  color:var(--text);
+  background:#fff;
+  font-family:"Noto Sans JP",system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+  font-weight:400;
+  line-height:1.8;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+figure,p,h1,h2,h3,ul{margin-top:0}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+.site-header{
+  height:82px;
+  background:#fff;
+  display:flex;
+  align-items:center;
+  position:relative;
+  z-index:20;
+}
+.header-inner{width:min(100% - 64px,var(--max));margin:auto;display:flex;align-items:center;justify-content:space-between;gap:48px}
+.logo-link{display:block;flex:0 0 auto}
+.site-logo{width:176px;height:auto}
+.desktop-nav{display:flex;align-items:center;gap:30px;font-size:14px;letter-spacing:.04em}
+.desktop-nav a{padding:8px 0;transition:.2s color}
+.desktop-nav a:hover{color:var(--teal)}
+.mobile-menu{display:none}
+
+.hero{position:relative;width:100%;overflow:hidden;background:#dfe8ea}
+.hero>img{width:100%;height:720px;object-fit:cover;object-position:center}
+.hero-title-wrap{
+  position:absolute;
+  top:90px;
+  right:max(7vw,56px);
+  padding:14px 36px 16px 72px;
+  background:linear-gradient(90deg,rgba(255,255,255,.8),rgba(255,255,255,.4),rgba(255,255,255,0));
+  border-radius:50%;
+}
+.hero h1{margin:0;color:#0d6e73;font-size:50px;font-weight:500;letter-spacing:.06em;line-height:1.4;white-space:nowrap}
+
+.section-wide,.section-narrow,.content-shell{width:min(100% - 96px,var(--max));margin-inline:auto}
+.section-wide{padding:92px 0}
+.section-narrow{padding:82px 0}
+.band{background:var(--pale);padding:76px 0}
+
+.section-heading{color:var(--teal);display:flex;align-items:center;margin-bottom:42px}
+.section-heading h2{margin:0;font-size:32px;line-height:1.4;font-weight:500;letter-spacing:.03em}
+.section-heading-left{gap:14px}
+.heading-bar{width:5px;height:34px;background:var(--teal);border-radius:2px;flex:0 0 auto}
+.section-heading-center{justify-content:center;gap:28px}
+.section-heading-center>span{height:1px;background:var(--teal);flex:1;max-width:230px}
+.compact-heading{margin-bottom:36px}
+
+.hours{max-width:1040px}
+.hours .section-heading{margin-bottom:30px}
+.hours-table-wrap{overflow:hidden}
+.hours-table{width:100%;border-collapse:collapse;color:#1f2f30;font-size:18px}
+.hours-table th,.hours-table td{padding:12px 14px;text-align:center;border-bottom:1px solid var(--line);font-weight:400}
+.hours-table thead th{font-size:17px}
+.hours-table tbody th{text-align:left;white-space:nowrap;width:31%;font-weight:400}
+.hours-table td{color:var(--teal);font-size:20px}
+.hours-note{margin:18px 0 0;font-size:13px;line-height:1.7;color:#526264}
+
+.information-gallery{width:100%;overflow:hidden;padding:0 0 44px}
+.info-track{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.info-track figure{margin:0;overflow:hidden}
+.info-track img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.carousel-dots{display:none}
+
+.news{padding-top:78px}
+.news-grid{display:grid;grid-template-columns:minmax(280px,.72fr) minmax(420px,1.28fr);align-items:start;gap:74px}
+.news-image{margin:0}
+.news-image img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.news-content .section-heading{margin-bottom:26px}
+.news-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.news-list li{font-size:17px;padding:17px 4px;border-bottom:1px solid var(--line)}
+.button-row{display:flex;justify-content:flex-end;margin-top:28px}
+.more-button{min-height:40px;padding:8px 24px;border-radius:999px;background:var(--teal-dark);color:#fff;display:inline-flex;align-items:center;gap:14px;font-size:14px;font-weight:500;line-height:1.2;white-space:nowrap}
+.more-button span{font-size:20px;line-height:1}
+
+.greeting-grid{display:grid;grid-template-columns:360px 1fr;gap:72px;align-items:center}
+.greeting-photo-wrap{text-align:center}
+.greeting-photo{width:330px;aspect-ratio:1/1;object-fit:cover;object-position:30% center;margin:auto}
+.roman-name{margin:8px 0 0;color:#76aeb1;font-size:30px;line-height:1.2;font-weight:500;letter-spacing:.02em;text-align:center}
+.greeting-copy .section-heading{margin-bottom:26px}
+.greeting-copy p{font-size:20px;line-height:1.9;margin-bottom:18px}
+.greeting-copy .signature{text-align:right;margin-top:32px;margin-bottom:0;font-size:17px}
+
+.services .section-heading-center{margin-bottom:52px}
+.service-row{display:grid;grid-template-columns:minmax(330px,.8fr) minmax(0,1.2fr);align-items:center;gap:76px;margin-bottom:78px}
+.service-row.reverse{grid-template-columns:minmax(0,1.2fr) minmax(330px,.8fr)}
+.service-row.reverse figure{order:2}
+.service-row figure{margin:0}
+.service-row img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.service-row h3{margin-bottom:14px;color:var(--teal);font-size:28px;font-weight:500;line-height:1.45}
+.service-row p{font-size:22px;line-height:1.8;margin:0}
+
+.about-grid{display:grid;grid-template-columns:minmax(360px,.86fr) minmax(0,1.14fr);gap:72px;align-items:center}
+.about-grid figure{margin:0}
+.about-grid img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.about-grid .section-heading{margin-bottom:24px}
+.about-grid p{font-size:20px;line-height:1.9;margin-bottom:0}
+
+.staff{padding-bottom:68px}
+.staff-lead{max-width:860px;margin:-14px auto 56px;text-align:center;font-size:18px;line-height:1.9}
+.staff-row{display:grid;grid-template-columns:280px 1fr;gap:68px;align-items:center;margin-bottom:64px}
+.staff-row.reverse{grid-template-columns:1fr 280px}
+.staff-row.reverse figure{order:2}
+.staff-row figure{margin:0}
+.staff-row img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.staff-row h3{color:var(--teal);font-size:26px;font-weight:500;margin-bottom:16px}
+.staff-row p{font-size:20px;line-height:1.85;margin:0}
+
+.access{padding-top:48px}
+.access-grid{display:grid;grid-template-columns:minmax(430px,1.05fr) minmax(340px,.95fr);gap:72px;align-items:start}
+.access-grid figure{margin:0}
+.access-grid img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.access-info h3{color:var(--text);font-size:20px;font-weight:500;margin:0 0 8px}
+.access-info p{font-size:18px;line-height:1.8;margin:0 0 28px}
+
+.hours-bottom{padding-top:30px;padding-bottom:52px}
+.departments{padding-top:20px;padding-bottom:86px;text-align:center}
+.departments ul{list-style:none;padding:0;margin:0 auto 18px;font-size:18px;line-height:2.1}
+.departments p{font-size:14px;margin:0;color:#556466}
+
+.site-footer{background:#006267;color:#fff;padding:30px 24px 22px;text-align:center}
+.disclaimer{max-width:920px;margin:0 auto 12px;font-size:12px;line-height:1.8;color:rgba(255,255,255,.86)}
+.copyright{margin:0;font-size:13px}
+
+@media (max-width: 760px){
+  :root{--mobile-pad:20px}
+  body{line-height:1.75;background:var(--paper)}
+  .site-header{height:58px;background:#fff}
+  .header-inner{width:100%;padding:0 14px 0 12px;gap:12px}
+  .site-logo{width:96px}
+  .desktop-nav{display:none}
+  .mobile-menu{display:block;position:relative}
+  .mobile-menu summary{list-style:none;width:44px;height:44px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;cursor:pointer}
+  .mobile-menu summary::-webkit-details-marker{display:none}
+  .mobile-menu summary span{width:17px;height:2px;background:#2f3b3c;border-radius:2px}
+  .mobile-menu nav{position:absolute;right:0;top:47px;width:210px;background:#fff;box-shadow:0 8px 28px rgba(20,48,50,.16);border:1px solid #e3eaeb;padding:8px 16px;display:flex;flex-direction:column;z-index:30}
+  .mobile-menu nav a{font-size:14px;padding:11px 4px;border-bottom:1px solid #edf1f2}
+  .mobile-menu nav a:last-child{border-bottom:0}
+
+  .hero>img{height:auto;aspect-ratio:390/220;object-fit:cover;object-position:center}
+  .hero-title-wrap{top:24px;right:8px;padding:6px 12px 7px 34px}
+  .hero h1{font-size:28px;line-height:1.35;letter-spacing:.03em}
+
+  .section-wide,.section-narrow,.content-shell{width:auto;margin:0;padding-left:var(--mobile-pad);padding-right:var(--mobile-pad)}
+  .section-wide{padding-top:56px;padding-bottom:56px}
+  .section-narrow{padding-top:46px;padding-bottom:46px}
+  .band{padding:52px 0}
+
+  .section-heading{margin-bottom:28px}
+  .section-heading h2{font-size:22px;line-height:1.45}
+  .section-heading-left{gap:9px}
+  .heading-bar{width:3px;height:23px}
+  .section-heading-center{gap:14px}
+  .section-heading-center>span{max-width:none}
+  .compact-heading{margin-bottom:26px}
+
+  .hours{padding-top:36px;padding-bottom:34px}
+  .hours .section-heading{margin-bottom:16px}
+  .hours-table-wrap{width:100%;overflow:visible}
+  .hours-table{font-size:12px;table-layout:fixed}
+  .hours-table th,.hours-table td{padding:7px 2px}
+  .hours-table thead th{font-size:11px}
+  .hours-table thead th:first-child{width:35%}
+  .hours-table tbody th{font-size:11px;line-height:1.3;width:35%;white-space:nowrap;padding-left:0}
+  .hours-table td{font-size:13px}
+  .hours-note{font-size:11px;line-height:1.65;margin-top:12px}
+
+  .information-gallery{padding-bottom:38px;background:var(--paper)}
+  .info-track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 var(--mobile-pad);scrollbar-width:none}
+  .info-track::-webkit-scrollbar{display:none}
+  .info-track figure{flex:0 0 78%;scroll-snap-align:center}
+  .info-track img{width:100%;aspect-ratio:16/9;object-fit:cover}
+  .carousel-dots{display:flex;justify-content:center;gap:6px;margin-top:10px}
+  .carousel-dots span{width:7px;height:7px;border-radius:50%;background:#b7bfc0}
+  .carousel-dots .active{background:var(--teal)}
+
+  .news{padding-top:44px}
+  .news-grid{display:block}
+  .news-image{margin:0 0 28px}
+  .news-image img{width:100%;aspect-ratio:16/9;object-fit:cover}
+  .news-content .section-heading{margin-bottom:20px}
+  .news-list li{font-size:14px;padding:12px 2px}
+  .button-row{margin-top:20px}
+  .more-button{min-height:44px;padding:10px 20px;font-size:14px}
+
+  .greeting-grid{display:block}
+  .greeting-photo-wrap{margin-bottom:22px}
+  .greeting-photo{width:180px;height:180px;object-position:32% center}
+  .roman-name{font-size:18px;margin-top:7px}
+  .greeting-copy .section-heading{margin-bottom:20px}
+  .greeting-copy p{font-size:16px;line-height:1.75;margin-bottom:16px}
+  .greeting-copy .signature{font-size:14px;margin-top:24px}
+
+  .services .section-heading-center{margin-bottom:34px}
+  .service-row,.service-row.reverse{display:block;margin-bottom:42px}
+  .service-row.reverse figure{order:initial}
+  .service-row figure{margin:0 0 14px}
+  .service-row img{aspect-ratio:16/9;object-fit:cover}
+  .service-row h3{font-size:18px;line-height:1.5;margin-bottom:8px}
+  .service-row p{font-size:16px;line-height:1.75}
+
+  .about-grid{display:block}
+  .about-grid figure{margin:0 0 24px}
+  .about-grid img{aspect-ratio:16/9}
+  .about-grid .section-heading{margin-bottom:20px}
+  .about-grid p{font-size:16px;line-height:1.75}
+
+  .staff{padding-bottom:52px}
+  .staff-lead{font-size:14px;line-height:1.75;margin:-4px 0 30px;text-align:left}
+  .staff-row,.staff-row.reverse{display:flex;flex-direction:column;gap:0;align-items:stretch;margin-bottom:44px}
+  .staff-row.reverse figure{order:0}
+  .staff-row figure{width:210px;max-width:68%;margin:0 auto 14px}
+  .staff-row img{width:100%;aspect-ratio:16/9;object-fit:cover}
+  .staff-row h3{text-align:center;font-size:18px;line-height:1.5;margin-bottom:9px}
+  .staff-row p{font-size:16px;line-height:1.75;margin:0}
+
+  .access{padding-top:36px}
+  .access-grid{display:block}
+  .access-grid figure{margin:0 0 18px}
+  .access-grid img{aspect-ratio:4/3}
+  .access-info h3{font-size:16px;margin-bottom:5px}
+  .access-info p{font-size:14px;line-height:1.7;margin-bottom:18px}
+
+  .hours-bottom{padding-top:28px;padding-bottom:34px}
+  .departments{padding-top:20px;padding-bottom:58px}
+  .departments ul{font-size:14px;line-height:1.9;margin-bottom:14px}
+  .departments p{font-size:11px;line-height:1.7}
+
+  .site-footer{padding:22px 18px 18px}
+  .disclaimer{font-size:10px;line-height:1.7;margin-bottom:10px}
+  .copyright{font-size:11px}
+}
+
+@media (max-width: 340px){
+  :root{--mobile-pad:16px}
+  .hero h1{font-size:25px}
+  .hours-table{font-size:11px}
+  .hours-table tbody th{font-size:10.5px}
+  .hours-table td{font-size:12px}
+  .service-row p,.greeting-copy p,.about-grid p,.staff-row p{font-size:15px}
+}
