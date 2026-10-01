@@ -265,9 +265,10 @@ figure,p,h1,h2,h3,ul{margin-top:0}
   .about-grid .section-heading{margin-bottom:16px}
   .about-grid p{font-size:16px;line-height:1.75}
 
-  .staff{padding-bottom:44px}
+  .staff{padding-bottom:22px}
   .staff-lead{font-size:14px;line-height:1.75;margin:-4px 0 24px;text-align:left}
   .staff-row,.staff-row.reverse{display:flex;flex-direction:column;gap:0;align-items:stretch;margin-bottom:40px}
+  .staff-row:last-of-type{margin-bottom:20px}
   .staff-row.reverse figure{order:0}
   .staff-row figure{width:210px;max-width:68%;margin:0 auto 14px}
   .staff-row img{width:100%;aspect-ratio:1/1;object-fit:cover}
@@ -275,12 +276,13 @@ figure,p,h1,h2,h3,ul{margin-top:0}
   .staff-row.reverse h3{text-align:center}
   .staff-row ul{font-size:16px;line-height:1.75;margin:0;padding-left:1.2em}
 
-  .access{padding-top:32px}
+  .access{padding-top:32px;padding-bottom:24px}
   .access-grid{display:block}
   .access-grid figure{margin:0 0 14px}
   .access-grid img{aspect-ratio:4/3}
   .access-info h3{font-size:16px;margin-bottom:5px}
   .access-info p{font-size:14px;line-height:1.7;margin-bottom:14px}
+  .access-info p:last-child{margin-bottom:7px}
 
   .hours-bottom{padding-top:24px;padding-bottom:28px}
   .departments{padding-top:16px;padding-bottom:48px}
