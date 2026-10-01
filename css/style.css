@@ -181,7 +181,7 @@ figure,p,h1,h2,h3,ul{margin-top:0}
 
 @media (max-width: 760px){
   :root{--mobile-pad:24px}
-  body{line-height:1.75;background:var(--color-background)}
+  body{line-height:1.75;background:var(--color-background);overflow-x:hidden;overflow-x:clip}
   .site-header{height:58px;background:#fff}
   .header-inner{width:100%;padding:0 14px 0 12px;gap:12px}
   .site-logo{width:96px}
@@ -215,12 +215,12 @@ figure,p,h1,h2,h3,ul{margin-top:0}
 
   .hours{padding-top:32px;padding-bottom:28px}
   .hours .section-heading{margin-bottom:14px}
-  .hours-table-wrap{width:100%;overflow:visible}
+  .hours-table-wrap{width:100%;overflow:hidden}
   .hours-table{font-size:12px;table-layout:fixed}
   .hours-table th,.hours-table td{padding:7px 2px}
   .hours-table thead th{font-size:11px}
   .hours-table thead th:first-child{width:35%}
-  .hours-table tbody th{font-size:11px;line-height:1.3;width:35%;white-space:nowrap;padding-left:0}
+  .hours-table tbody th{font-size:11px;line-height:1.3;width:35%;white-space:normal;padding-left:0}
   .hours-table td{font-size:13px}
   .hours-note{font-size:11px;line-height:1.65;margin-top:10px}
 
