@@ -88,7 +88,11 @@
         <figure><img src="./assets/Infomation_Image/information_2.jpg" alt="医療スタッフによる案内風景"></figure>
         <figure><img src="./assets/Infomation_Image/information_3.jpg" alt="医療スタッフと患者の相談風景"></figure>
       </div>
-      <div class="carousel-dots" aria-hidden="true"><span class="active"></span><span></span><span></span></div>
+      <div class="carousel-dots" aria-label="院内写真を選択">
+        <button class="active" type="button" aria-label="1枚目を表示"></button>
+        <button type="button" aria-label="2枚目を表示"></button>
+        <button type="button" aria-label="3枚目を表示"></button>
+      </div>
     </section>
 
     <section id="news" class="news section-wide">
@@ -291,5 +295,49 @@
     <p class="disclaimer">本サイトは職業訓練の学習用に制作した架空のサンプルサイトです。掲載している医院・人物・連絡先・所在地はすべて架空であり、実在のものとは関係ありません。</p>
     <p class="copyright">© 佐藤医院</p>
   </footer>
+  <script>
+    const galleryTrack = document.querySelector(".info-track");
+    const gallerySlides = galleryTrack ? [...galleryTrack.querySelectorAll("figure")] : [];
+    const galleryDots = [...document.querySelectorAll(".carousel-dots button")];
+
+    if (galleryTrack && gallerySlides.length === galleryDots.length) {
+      let galleryUpdateFrame = 0;
+
+      const updateGalleryDot = () => {
+        galleryUpdateFrame = 0;
+        const trackCenter = galleryTrack.getBoundingClientRect().left + galleryTrack.clientWidth / 2;
+        let activeIndex = 0;
+        let closestDistance = Infinity;
+
+        gallerySlides.forEach((slide, index) => {
+          const rect = slide.getBoundingClientRect();
+          const distance = Math.abs(rect.left + rect.width / 2 - trackCenter);
+          if (distance < closestDistance) {
+            closestDistance = distance;
+            activeIndex = index;
+          }
+        });
+
+        galleryDots.forEach((dot, index) => dot.classList.toggle("active", index === activeIndex));
+      };
+
+      galleryTrack.addEventListener("scroll", () => {
+        if (!galleryUpdateFrame) galleryUpdateFrame = requestAnimationFrame(updateGalleryDot);
+      }, { passive: true });
+      galleryDots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+          const slide = gallerySlides[index];
+          const trackRect = galleryTrack.getBoundingClientRect();
+          const slideRect = slide.getBoundingClientRect();
+          const targetLeft = galleryTrack.scrollLeft + slideRect.left - trackRect.left
+            - (galleryTrack.clientWidth - slideRect.width) / 2;
+
+          galleryTrack.scrollTo({ left: targetLeft, behavior: "smooth" });
+        });
+      });
+      window.addEventListener("resize", updateGalleryDot);
+      updateGalleryDot();
+    }
+  </script>
 </body>
 </html>

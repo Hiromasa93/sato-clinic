@@ -230,8 +230,9 @@ figure,p,h1,h2,h3,ul{margin-top:0}
   .info-track figure{flex:0 0 78%;scroll-snap-align:center}
   .info-track img{width:100%;aspect-ratio:16/9;object-fit:cover}
   .carousel-dots{display:flex;justify-content:center;gap:6px;margin-top:8px}
-  .carousel-dots span{width:7px;height:7px;border-radius:50%;background:var(--color-border-soft)}
-  .carousel-dots .active{background:var(--color-primary)}
+  .carousel-dots button{width:7px;height:7px;padding:0;border:0;border-radius:50%;background:var(--color-border-soft);cursor:pointer}
+  .carousel-dots button.active{background:var(--color-primary)}
+  .carousel-dots button:focus-visible{outline:2px solid var(--color-primary);outline-offset:3px}
 
   .news{padding-top:36px}
   .news-grid{display:block}
