@@ -121,6 +121,8 @@ figure,p,h1,h2,h3,ul{margin-top:0}
 .news-content .section-heading{margin-bottom:22px}
 .news-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--color-border)}
 .news-list li{font-size:18px;padding:14px 4px;border-bottom:1px solid var(--color-border)}
+.news-list a{display:block;transition:color .18s ease}
+.news-list a:hover,.news-list a:focus-visible{color:var(--color-primary);text-decoration:underline;text-underline-offset:3px}
 .button-row{display:flex;justify-content:flex-end;margin-top:22px}
 .more-button{min-height:40px;padding:8px 24px;border-radius:999px;background:var(--color-primary-dark);color:var(--color-white);display:inline-flex;align-items:center;gap:14px;font-size:14px;font-weight:500;line-height:1.2;white-space:nowrap;transition:background-color .18s ease}
 .more-button:focus-visible{background:#17666B;outline:2px solid var(--color-primary-light);outline-offset:3px}
@@ -208,6 +210,10 @@ figure,p,h1,h2,h3,ul{margin-top:0}
 .about-policy-table thead th:nth-child(2){width:32%}
 .about-policy-table tbody th{width:5%;color:var(--color-primary)}
 .about-policy-table tbody tr:nth-child(even){background:#F1F7F6}
+
+.news-detail-title{margin-bottom:36px}
+.news-detail-title h1{margin:0;font-family:"Noto Serif JP",serif;font-size:28px;line-height:1.45;font-weight:500;color:var(--color-primary)}
+.news-detail-copy{max-width:980px;margin:0;font-size:20px;line-height:1.8}
 
 .faq{padding-top:64px;padding-bottom:80px}
 .faq .section-heading{margin-bottom:18px}
@@ -352,6 +358,10 @@ figure,p,h1,h2,h3,ul{margin-top:0}
   .about-policy-table{font-size:12px;line-height:1.55}
   .about-policy-table th,.about-policy-table td{padding:7px 6px}
 
+  .news-detail-title{margin-bottom:24px}
+  .news-detail-title h1{font-size:18px;line-height:1.5}
+  .news-detail-copy{font-size:16px;line-height:1.75}
+
   .faq{padding-top:48px;padding-bottom:48px}
   .faq .section-heading{margin-bottom:14px}
   .faq-lead,.faq-contact{font-size:16px;line-height:1.75;margin-bottom:24px;text-align:center}
@@ -377,5 +387,6 @@ figure,p,h1,h2,h3,ul{margin-top:0}
   .additional-service-list p{font-size:15px}
   .about-detail-content>p,.about-detail-section p{font-size:15px}
   .about-detail-list{font-size:15px}
+  .news-detail-copy{font-size:15px}
   .staff-row ul{font-size:15px}
 }
