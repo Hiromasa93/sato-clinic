@@ -140,6 +140,7 @@ figure,p,h1,h2,h3,ul{margin-top:0}
 .services .service-row:nth-of-type(2) img,.services .service-row:nth-of-type(3) img{object-position:right center}
 .service-row h3{margin-bottom:10px;color:var(--color-primary);font-size:28px;font-weight:500;line-height:1.45}
 .service-row p{font-size:20px;line-height:1.8;margin:0}
+@media (min-width:761px){.service-row.reverse h3{text-align:right}}
 
 .about-grid{display:grid;grid-template-columns:minmax(360px,.86fr) minmax(0,1.14fr);gap:56px;align-items:center}
 .about-grid figure{margin:0}
