@@ -296,6 +296,15 @@
     <p class="copyright">© 佐藤医院</p>
   </footer>
   <script>
+    const mobileMenu = document.querySelector(".mobile-menu");
+    if (mobileMenu) {
+      mobileMenu.querySelectorAll("nav a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.open = false;
+        });
+      });
+    }
+
     const galleryTrack = document.querySelector(".info-track");
     const gallerySlides = galleryTrack ? [...galleryTrack.querySelectorAll("figure")] : [];
     const galleryDots = [...document.querySelectorAll(".carousel-dots button")];
