@@ -43,7 +43,7 @@ figure,p,h1,h2,h3,ul{margin-top:0}
 .desktop-nav{display:flex;align-items:center;gap:18px;font-size:18px;letter-spacing:.04em}
 .desktop-nav a{padding:8px 0;transition:.2s color}
 .desktop-nav{color:#263638}
-.desktop-nav a:hover{color:#0b7478}
+.desktop-nav a:hover,.desktop-nav a:focus-visible{color:#0b7478}
 .mobile-menu{display:none}
 
 .hero{position:relative;width:100%;overflow:hidden;background:var(--color-background-tint)}
