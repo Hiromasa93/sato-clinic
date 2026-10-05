@@ -118,7 +118,9 @@ figure,p,h1,h2,h3,ul{margin-top:0}
 .news-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--color-border)}
 .news-list li{font-size:18px;padding:14px 4px;border-bottom:1px solid var(--color-border)}
 .button-row{display:flex;justify-content:flex-end;margin-top:22px}
-.more-button{min-height:40px;padding:8px 24px;border-radius:999px;background:var(--color-primary-dark);color:var(--color-white);display:inline-flex;align-items:center;gap:14px;font-size:14px;font-weight:500;line-height:1.2;white-space:nowrap}
+.more-button{min-height:40px;padding:8px 24px;border-radius:999px;background:var(--color-primary-dark);color:var(--color-white);display:inline-flex;align-items:center;gap:14px;font-size:14px;font-weight:500;line-height:1.2;white-space:nowrap;transition:background-color .18s ease}
+.more-button:focus-visible{background:#17666B;outline:2px solid var(--color-primary-light);outline-offset:3px}
+@media (hover:hover) and (pointer:fine){.more-button:hover{background:#17666B}}
 .more-button span{font-size:20px;line-height:1}
 
 .greeting-grid{display:grid;grid-template-columns:360px 1fr;gap:56px;align-items:center}
