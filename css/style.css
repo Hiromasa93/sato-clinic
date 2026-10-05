@@ -186,6 +186,13 @@ figure,p,h1,h2,h3,ul{margin-top:0}
 .departments ul{list-style:none;padding:0;margin:0 auto 18px;font-size:18px;line-height:2.1}
 .departments p{font-size:14px;margin:0;color:var(--color-muted)}
 
+.additional-services .section-heading{margin-bottom:40px}
+.additional-services .section-heading h1{margin:0;font-family:"Noto Serif JP",serif;font-size:32px;line-height:1.4;font-weight:500;letter-spacing:.03em;color:var(--color-primary)}
+.additional-service-list{max-width:980px;margin:0 auto}
+.additional-service-list article{padding:0 0 28px;margin-bottom:28px;border-bottom:1px solid var(--color-border-soft)}
+.additional-service-list h2{margin:0 0 10px;color:var(--color-primary);font-size:28px;font-weight:500;line-height:1.45}
+.additional-service-list p{margin:0;font-size:20px;line-height:1.8}
+
 .faq{padding-top:64px;padding-bottom:80px}
 .faq .section-heading{margin-bottom:18px}
 .faq-lead,.faq-contact{max-width:900px;margin:0 auto 36px;text-align:center;font-size:20px;line-height:1.8;color:var(--color-muted)}
@@ -313,6 +320,12 @@ figure,p,h1,h2,h3,ul{margin-top:0}
   .departments ul{font-size:14px;line-height:1.9;margin-bottom:12px}
   .departments p{font-size:12px;line-height:1.7}
 
+  .additional-services .section-heading{margin-bottom:28px}
+  .additional-services .section-heading h1{font-size:22px}
+  .additional-service-list article{padding-bottom:20px;margin-bottom:20px}
+  .additional-service-list h2{font-size:18px;line-height:1.5;margin-bottom:10px}
+  .additional-service-list p{font-size:16px;line-height:1.75}
+
   .faq{padding-top:48px;padding-bottom:48px}
   .faq .section-heading{margin-bottom:14px}
   .faq-lead,.faq-contact{font-size:16px;line-height:1.75;margin-bottom:24px;text-align:center}
@@ -335,5 +348,6 @@ figure,p,h1,h2,h3,ul{margin-top:0}
   .hours-table tbody th{font-size:12px}
   .hours-table td{font-size:12px}
   .service-row p,.greeting-copy p,.about-grid p{font-size:15px}
+  .additional-service-list p{font-size:15px}
   .staff-row ul{font-size:15px}
 }
