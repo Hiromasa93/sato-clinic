@@ -127,7 +127,7 @@ figure,p,h1,h2,h3,ul{margin-top:0}
 .greeting-photo-wrap{text-align:center}
 .greeting-photo-crop{width:280px;aspect-ratio:1/1;overflow:hidden;margin-inline:auto}
 .greeting-photo{width:100%;height:100%;aspect-ratio:1/1;object-fit:cover;object-position:92% center;transform:scale(1.9);transform-origin:50% 19%}
-.roman-name{margin:6px 0 0;color:var(--color-primary-light);font-size:30px;line-height:1.2;font-weight:500;letter-spacing:.02em;text-align:center}
+.roman-name{margin:6px 0 0;color:#456F78;font-size:30px;line-height:1.2;font-weight:500;letter-spacing:.02em;text-align:center}
 .greeting-copy .section-heading{margin-bottom:22px}
 .greeting-copy p{font-size:20px;line-height:1.9;margin-bottom:14px}
 .greeting-copy .signature{text-align:right;margin-top:24px;margin-bottom:0;font-size:17px}
