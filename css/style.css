@@ -193,6 +193,22 @@ figure,p,h1,h2,h3,ul{margin-top:0}
 .additional-service-list h2{margin:0 0 10px;color:var(--color-primary);font-size:28px;font-weight:500;line-height:1.45}
 .additional-service-list p{margin:0;font-size:20px;line-height:1.8}
 
+.about-detail-title{margin-bottom:36px}
+.about-detail-title h1{margin:0;font-family:"Noto Serif JP",serif;font-size:32px;line-height:1.4;font-weight:500;letter-spacing:.03em;color:var(--color-primary)}
+.about-detail-content{max-width:980px;margin:0 auto}
+.about-detail-content>p,.about-detail-section p{margin:0;font-size:20px;line-height:1.8}
+.about-detail-section{margin-top:36px}
+.about-detail-section h2{margin:0 0 10px;color:var(--color-primary);font-size:28px;font-weight:500;line-height:1.45}
+.about-detail-list{margin:14px 0 0;padding-left:1.4em;font-size:20px;line-height:1.8}
+.about-policy-table-wrap{margin-top:22px}
+.about-policy-table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:16px;line-height:1.6}
+.about-policy-table th,.about-policy-table td{padding:10px 12px;border:1px solid #D3E1DF;text-align:left;vertical-align:middle;font-weight:400}
+.about-policy-table thead th{background:#2F8D81;color:#fff;font-weight:600}
+.about-policy-table thead th:first-child{width:5%}
+.about-policy-table thead th:nth-child(2){width:32%}
+.about-policy-table tbody th{width:5%;color:var(--color-primary)}
+.about-policy-table tbody tr:nth-child(even){background:#F1F7F6}
+
 .faq{padding-top:64px;padding-bottom:80px}
 .faq .section-heading{margin-bottom:18px}
 .faq-lead,.faq-contact{max-width:900px;margin:0 auto 36px;text-align:center;font-size:20px;line-height:1.8;color:var(--color-muted)}
@@ -326,6 +342,16 @@ figure,p,h1,h2,h3,ul{margin-top:0}
   .additional-service-list h2{font-size:18px;line-height:1.5;margin-bottom:10px}
   .additional-service-list p{font-size:16px;line-height:1.75}
 
+  .about-detail-title{margin-bottom:24px}
+  .about-detail-title h1{font-size:22px}
+  .about-detail-content>p,.about-detail-section p{font-size:16px;line-height:1.75}
+  .about-detail-section{margin-top:28px}
+  .about-detail-section h2{font-size:18px;line-height:1.5;margin-bottom:8px}
+  .about-detail-list{font-size:16px;line-height:1.75;margin-top:10px}
+  .about-policy-table-wrap{margin-top:16px;overflow-x:auto}
+  .about-policy-table{font-size:12px;line-height:1.55}
+  .about-policy-table th,.about-policy-table td{padding:7px 6px}
+
   .faq{padding-top:48px;padding-bottom:48px}
   .faq .section-heading{margin-bottom:14px}
   .faq-lead,.faq-contact{font-size:16px;line-height:1.75;margin-bottom:24px;text-align:center}
@@ -349,5 +375,7 @@ figure,p,h1,h2,h3,ul{margin-top:0}
   .hours-table td{font-size:12px}
   .service-row p,.greeting-copy p,.about-grid p{font-size:15px}
   .additional-service-list p{font-size:15px}
+  .about-detail-content>p,.about-detail-section p{font-size:15px}
+  .about-detail-list{font-size:15px}
   .staff-row ul{font-size:15px}
 }
