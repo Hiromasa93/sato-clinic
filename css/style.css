@@ -273,7 +273,7 @@ figure,p,h1,h2,h3,ul{margin-top:0}
   .about-grid p{font-size:16px;line-height:1.75}
 
   .staff{padding-bottom:22px}
-  .staff-lead{font-size:14px;line-height:1.75;margin:-4px 0 24px;text-align:left}
+  .staff-lead{font-size:15px;line-height:1.75;margin:-4px 0 24px;text-align:left}
   .staff-row,.staff-row.reverse{display:flex;flex-direction:column;gap:0;align-items:stretch;margin-bottom:40px}
   .staff-row:last-of-type{margin-bottom:20px}
   .staff-row.reverse figure{order:0}
