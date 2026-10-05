@@ -179,8 +179,8 @@ figure,p,h1,h2,h3,ul{margin-top:0}
 .departments ul{list-style:none;padding:0;margin:0 auto 18px;font-size:18px;line-height:2.1}
 .departments p{font-size:14px;margin:0;color:var(--color-muted)}
 
-.site-footer{background:var(--color-footer);color:var(--color-white);padding:14px 24px 12px;text-align:center}
-.disclaimer{max-width:1180px;margin:0 auto 6px;font-size:11px;line-height:1.65;color:rgba(255,255,255,.86)}
+.site-footer{background:var(--color-footer);color:var(--color-white);padding:18px 24px;text-align:center}
+.disclaimer{max-width:1180px;margin:0 auto 6px;font-size:12px;line-height:1.65;color:rgba(255,255,255,.86)}
 .copyright{margin:0;font-size:11px}
 
 @media (max-width: 760px){
@@ -219,14 +219,15 @@ figure,p,h1,h2,h3,ul{margin-top:0}
 
   .hours{padding-top:32px;padding-bottom:28px}
   .hours .section-heading{margin-bottom:14px}
+  .hours .section-heading h2{font-size:20px}
   .hours-table-wrap{width:100%;overflow:hidden}
   .hours-table{font-size:12px;table-layout:fixed}
   .hours-table th,.hours-table td{padding:7px 2px}
-  .hours-table thead th{font-size:11px}
+  .hours-table thead th{font-size:12px}
   .hours-table thead th:first-child{width:35%}
-  .hours-table tbody th{font-size:11px;line-height:1.3;width:35%;white-space:normal;padding-left:0}
-  .hours-table td{font-size:13px}
-  .hours-note{font-size:11px;line-height:1.65;margin-top:10px}
+  .hours-table tbody th{font-size:12px;line-height:1.3;width:35%;white-space:normal;padding-left:0}
+  .hours-table td{font-size:12px}
+  .hours-note{font-size:12px;line-height:1.65;margin-top:10px}
 
   .information-gallery{padding-bottom:28px;background:var(--color-background)}
   .info-track{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 var(--mobile-pad);scrollbar-width:none}
@@ -291,18 +292,18 @@ figure,p,h1,h2,h3,ul{margin-top:0}
   .hours-bottom{padding-top:24px;padding-bottom:28px}
   .departments{padding-top:16px;padding-bottom:48px}
   .departments ul{font-size:14px;line-height:1.9;margin-bottom:12px}
-  .departments p{font-size:11px;line-height:1.7}
+  .departments p{font-size:12px;line-height:1.7}
 
-  .site-footer{padding:14px 16px 12px}
-  .disclaimer{font-size:11px;line-height:1.7;margin-bottom:8px}
+  .site-footer{padding:18px 16px}
+  .disclaimer{font-size:12px;line-height:1.7;margin-bottom:8px}
   .copyright{font-size:11px}
 }
 
 @media (max-width: 340px){
   :root{--mobile-pad:16px}
   .hero h1{font-size:25px}
-  .hours-table{font-size:11px}
-  .hours-table tbody th{font-size:10.5px}
+  .hours-table{font-size:12px}
+  .hours-table tbody th{font-size:12px}
   .hours-table td{font-size:12px}
   .service-row p,.greeting-copy p,.about-grid p{font-size:15px}
   .staff-row ul{font-size:15px}
